@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{cv}
+
+% Show overfull hbox (black box at the end of line)
+\setlength\overfullrule{5pt}
+
+% Configure extra PDF metadata
+\hypersetup{
+    pdftitle={Wen-Wei Liang's CV},
+    pdfauthor={Wen-Wei Liang},
+    pdfsubject={},
+    pdfcreator={LuaLaTeX}
+}
+
+% Override theme color
+% Set theme color by RGB hex values
+\definecolor{color-title}{HTML}{000000}
+
+% Use custom fonts
+\setmainfont{SourceSerif4}[
+    Path=./fonts/source-serif/,
+    Ligatures=TeX,
+    UprightFont=*-Regular, ItalicFont=*-It,
+    BoldFont=*-Bold, BoldItalicFont=*-BoldIt
+]
+\newfontfamily\lightsourceserif{SourceSerif4}[
+    Path=./fonts/source-serif/,
+    Ligatures=TeX,
+    UprightFont=*-Light, ItalicFont=*-LightIt,
+    BoldFont=*-Semibold, BoldItalicFont=*-SemiboldIt
+]
+\setsansfont{SourceSans3}[
+    Path=./fonts/source-sans/,
+    Ligatures=TeX,
+    UprightFont=*-Regular, ItalicFont=*-It,
+    BoldFont=*-Bold, BoldItalicFont=*-BoldIt
+]
+\newfontfamily\lightsourcesans{SourceSans3}[
+    Path=./fonts/source-sans/,
+    Ligatures=TeX,
+    UprightFont=*-Light, ItalicFont=*-LightIt,
+    BoldFont=*-Semibold, BoldItalicFont=*-SemiboldIt
+]
+
+% Define the bibliography path
+\addbibresource{paperpile_annotated.bib}
+
+% Style the custom notes (addendum in the biblatex entry) at the end of each reference
+\DeclareFieldFormat{addendum}
+    {\lightsourceserif\color{color-title}\bfseries\itshape (#1)}
+
+% Style the volume (un-bold it)
+\DeclareFieldFormat[article]{volume}{\normalfont #1}
+
+% Force the publication title to be in sentence case
+\DeclareFieldFormat[article]{titlecase}{\MakeSentenceCase*{#1}}
+
+%%%%%%%%Begining
+\begin{document}
+
+% Heading
+\begin{minipage}[b][][c]{35em}
+    \lightsourceserif\Huge\bfseries\color{color-title}
+    Wen-Wei Liang, Ph.D.
+\end{minipage}%
+\hfill
+% Make sure there isn't any space between two minipages
+% Ref: https://tex.stackexchange.com/a/114521
+\hspace{1em}
+\begin{minipage}[b][][b]{11em}
+    \raggedleft
+    \small
+    101 6th Ave, New York, NY \hfill
+    \href{mailto:wliang@nygenome.org}{wliang@nygenome.org} \hfill
+    (314) 540-1364
+\end{minipage}
+%%%%%%%%%%%Education
+\section{Education}
+
+\begin{entrylist}
+
+\item \textbf{Washington University in St. Louis} \hspace{2.45em} Ph.D. in Molecular Genetics and Genomics \hfill
+    2014--2020 \\
+
+\item \textbf{National Yang-Ming University, Taiwan} \hspace{0.5em} M.S. in Microbiology and Immunology \hfill
+    2009--2011 \\
+
+\item \textbf{National Tsing-Hua University, Taiwan} \hspace{0.72em} B.S. in Life Science \hfill
+    2005--2009 \\
+
+\end{entrylist}
+
+%%%%%%%Felloships
+\section{Fellowships}
+
+\begin{entrylist}
+
+\item Taiwan Ministry of Education - Washington University in St. Louis Fellow \hfill
+    2014--2018 \\
+\item Washington University in St. Louis Precision Medicine Pathway Fellow \hfill
+    2015--2016 \\
+\item Taiwan Ministry of Education Fellowship to Study Abroad \hfill
+    2007--2008 \\
+
+\end{entrylist}
+
+%%%%%%%Research Experience
+\section{Research Positions}
+
+\begin{entrylist}
+\raggedleft
+\item \textbf{New York University and New York Genome Center} \hfill New York, NY\\
+Postdoctoral research associate, \href{http://sanjanalab.org/}{Laboratory of Neville Sanjana } \hfill
+2021--Present
+\begin{detaillist}
+    \item \textit{\textbf{Transcriptome-scale RNA-targeting CRISPR screens reveal essential lncRNAs in human cells:}} Conducted Cas13 pooled screens and perturbation assays, coupled with single-cell RNA sequencing, to identify and characterize hundreds of lncRNAs crucial for cell proliferation and their mechanistic roles.
+    \item \textit{\textbf{High-content CRISPR screens identify lncRNAs modulate CAR-macrophages in tumor microenvironment:}} Implemented \textit{in vitro} and \textit{in vivo} screens to discover lncRNAs that promote a pro-inflammatory microenvironment in BRCA xenograft and BRCA organoid models. 
+\end{detaillist}
+
+\item \textbf{Washington University in St. Louis} \hfill St. Louis, MO\\
+Ph.D. student and postdoctoral research associate, \href{https://dinglab.wustl.edu/}{Laboratory of Li Ding } \hfill
+2015--2021
+\begin{detaillist}
+    \item \textit{\textbf{Epigenetic regulation during cancer transitions across 11 tumour types:}} Utilized snATAC sequencing, single-cell RNA sequencing, and bulk whole-exome sequencing data from the Human Tumor Atlas Network (HTAN) to profile over a million cells or nuclei. Identified cancer-specific accessible region dynamics correlating with gene expression, uncovering novel regulatory regions and their target genes.
+    \item \textit{\textbf{Integrative multi-omic cancer profiling reveals DNA methylation patterns associated with therapeutic vulnerability and cell-of-origin:}} Leveraged DNA methylation, RNA sequencing, and proteomic data from the Clinical Proteogenomic Tumor Analysis Consortium (CPTAC) to elucidate how epigenetic changes in cancer cells influence gene expression, protein levels, tumor characteristics, and therapeutic responses.
+    \item \textit{\textbf{Driver fusions and their implications in the development and treatment of human cancers:}} Conducted comprehensive analysis of gene fusions in over 9,000 tumors across 33 cancer types from The Cancer Genome Atlas (TCGA), uncovering how these fusions drive the expression of oncogenes, tumor suppressor genes, and kinases. Identified druggable fusions in 6.0\% of cases, highlighting their potential as targets for precision therapies.
+\end{detaillist}
+
+\item \textbf{Academia Sinica} \hfill Taipei, Taiwan\\
+Master's student and research assistant, Laboratory of Soo-Chen Cheng \hfill
+2009--2014
+\begin{detaillist}
+    % \item Thesis: \href{https://doi.org/10.6342/NTU201601295}{BioCloud: an online sequencing analysis platform}
+    \item \textit{\textbf{A novel mechanism for Prp5 function in prespliceosome formation and proofreading the branch site sequence: }}Identified the role of Prp5 in spliceosome assembly and branch site proofreading, showing how Prp5's interactions with U2 snRNA and subsequent release facilitate accurate spliceosome assembly.
+\end{detaillist}
+
+\end{entrylist}
+
+\section{Honors \& Awards}
+
+\begin{detaillist}
+
+\item Best of Cell Reports 2018
+    \hfill 2018
+
+\item Outstanding Merit Research Award National Yang-Ming University
+    \hfill 2011
+
+\item Dean's List, Department of Life Science, National Tsing-Hua University
+    \hfill 2007
+
+\item Outstanding student from Low-income, Lu Feng-Zhang Memorial Scholarship
+    \hfill
+    2006
+
+\end{detaillist}
+
+\section{Publications}
+
+\nocite{*}
+
+\printbibliography[
+    keyword={primary},
+    heading=subbibliography,
+    title={First authorship \tiny (* Equal contribution)}
+    ]
+
+\printbibliography[
+    keyword={contributing},
+    heading=subbibliography,
+    title={Co-authorship}
+    ]
+
+\section{Selected Talks}
+\begin{entrylist}
+    \item \textbf{CSHL Meeting: The Biology of Genomes} \hfill Cold Spring Harbor, NY \\
+    \textit{\small{Transcriptome-scale RNA-targeting CRISPR screens reveal essential lncRNAs in human cells}}
+    \hfill 2024 
+
+    \item \textbf{The CPTAC Annual Scientific Symposium} \hfill Virtual \\
+    \textit{\small{Multiomic profiling reveals tumorigenic DNA methylation associated with therapeutic vulnerability and cell-of-origin}} \hfill 2021
+
+    \item \textbf{The CPTAC Site Visit – NYU-WU-BYU PGDAC} \hfill New York University, NY \\
+    \textit{\small{Tumorigenic DNA methylation revealed by integrative transcriptomic and proteomic profiling}} \hfill 2019
+
+    \item \textbf{CSHL Meeting: Eukaryotic mRNA Processing} \hfill Cold Spring Harbor, NY \\
+    \textit{\small{A novel mechanism for Prp5 function in prespliceosome formation and proofreading the branch site sequence}}
+    \hfill 2013
+
+    \item \textbf{Taiwan Yeast Meeting} \hfill Taiwan \\
+    \textit{\small{The DEAD-box ATPase Prp5 mediates splicing fidelity control by counteracting tri-snRNP binding}}
+    \hfill 2013
+\end{entrylist}
+
+
+\section{Teaching, Mentoring \& Outreach}
+
+\begin{entrylist}
+
+\item \textbf{Simons foundation-NYU biology summer undergraduate research program, New York, NY} \hfill Summer 2024\\
+    {\small Mentored an undergraduate student, Sebastián H. Díaz-Rodríguez, from a diverse background, providing high-quality research training and opportunities that are often inaccessible to underrepresented students.} \\
+    
+\item \textbf{New York University, Laboratory of Neville Sanjana, New York, NY} \hfill 2021--2024\\
+    {\small Guided a master's student, Breanna Williams (recipient of the Wasserman Center Internship Grant), and an undergraduate, Olivia Choi (recipient of the NYU Dean's Undergraduate Research Fund), in completing their thesis.}
+
+\item \textbf{Biology Club at Rutgers University-Camden, Camden, NJ} \hfill 2022\\
+    Participated as a panelist to discuss career development opportunities in science and technology with undergraduate students.
+
+\item \textbf{Midwest Taiwanese Biotechnology Association, Chicago, IL} \hfill 2017--2021\\
+    Co-founded the association, served in various leadership roles including Finance (2018), Promotion (2019), and President (2021), and organized events to foster dialogue among young scientists across Midwest cities.
+
+\item \textbf{Washington University in St. Louis, Laboratory of Li Ding, St. Louis, MO} \hfill 2015--2020\\
+    {\small Mentored three undergraduate students (Carolyn Lou, Terrence Tsou,  Jessika Baral), three rotation students (Yang Li, Wing Hing Wang, Winston Anthony), and one graduate research assistant (Rita Jui-Hsien Lu) in genome research.}
+
+\item \textbf{Washington University in St. Louis, Department of Biology, St. Louis, MO} \hfill Spring 2016\\
+    {\small Delivered lectures, provided assistance in molecular biology experiments, and assessed student performance as a teaching assistance in the Microbiology Laboratory course (Biol 3491) for over 30 undergraduate students.}
+
+
+\end{entrylist}
+
+\end{document}
