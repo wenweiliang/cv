@@ -1,6 +1,6 @@
 % Identification
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{my-cv}[2024/07/17 My CV class]
+\ProvidesClass{cv}[2024/07/17 My CV class]
 
 % Class options
 % Inherit options of article
