@@ -14,7 +14,7 @@ sudo tlmgr install \
     tracklang fmtcount
 ```
 2. [Download](https://code.visualstudio.com/download) and install Visual Studio Code.
-3. Follow this [guide](https://mathjiajia.github.io/vscode-and-latex/) to install the LaTeX Workshop extension in Visual Studio Code..
+3. Follow this [guide](https://mathjiajia.github.io/vscode-and-latex/) to install the LaTeX Workshop extension in Visual Studio Code.
 4. Open Visual Studio Code. In MacOS, press `cmd`+`shift`+`P` , then type and select `Preference: Open User Setting (JSON)`.
 5. Copy and paste the [settings JSON content ](https://raw.githubusercontent.com/ccwang002/cv/master/.vscode/settings.json) into the User Settings file.
 
