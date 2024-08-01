@@ -686,6 +686,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{DNA methylation plays a critical role in establishing and maintaining cellular identity. However, it is frequently dysregulated during tumor development and is closely intertwined with other genetic alterations. Here, we leveraged multi-omic profiling of 687 tumors and matched non-involved adjacent tissues from the kidney, brain, pancreas, lung, head and neck, and endometrium to identify aberrant methylation associated with RNA and protein abundance changes and build a Pan-Cancer catalog. We uncovered lineage-specific epigenetic drivers including hypomethylated FGFR2 in endometrial cancer. We showed that hypermethylated STAT5A is associated with pervasive regulon downregulation and immune cell depletion, suggesting that epigenetic regulation of STAT5A expression constitutes a molecular switch for immunosuppression in squamous tumors. We further demonstrated that methylation subtype-enrichment information can explain cell-of-origin, intra-tumor heterogeneity, and tumor phenotypes. Overall, we identified cis-acting DNA methylation events that drive transcriptional and translational changes, shedding light on the tumor's epigenetic landscape and the role of its cell-of-origin.}
+      \field{addendum}{"Featured in The Scientist magazine"}
       \field{journaltitle}{Cancer Cell}
       \field{month}{9}
       \field{number}{9}
