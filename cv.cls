@@ -55,13 +55,13 @@
     \color{color-detail}
     Page \thepage\ of \@abspage@last%
 }
-\fancyfoot[L]{%
+
+\fancyfoot[L]{
     \footnotesize
     \color{color-detail}
-    \ifnum\thepage=\@abspage@last%
-        Last updated: {\Today}%
-    \fi
+    Wen-Wei Liang | CV
 }
+
 \makeatother
 
 % Section title styling (titlesec)
