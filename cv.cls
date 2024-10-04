@@ -119,7 +119,7 @@
     parsep=0pt,
     partopsep=0pt,
     itemsep=2pt plus 0.5pt minus 0.5pt,
-    first=\small
+    first=\normalsize
 }
 
 % Shorthand
@@ -143,7 +143,7 @@
 
 \AtEveryBibitem{\clearlist{language}} % clear language
 % use small font for the bibliography
-\renewcommand*{\bibfont}{\normalfont\small}
+\renewcommand*{\bibfont}{\normalfont\normalfont}
 % change the horizontal distance between the numeric label and the reference
 \setlength{\biblabelsep}{\labelsep}
 % Make author name bold in the reference and add co-first author notation
