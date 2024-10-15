@@ -135,8 +135,8 @@
     url=false,
     doi=true,
     eprint=false,
-    minnames=10,
-    maxnames=14,
+    minnames=35,
+    maxnames=35,
     block=space,
     defernumbers=true
 ]{biblatex}
@@ -155,4 +155,5 @@
         #1
     }
     \ifitemannotation{co-first}{\textsuperscript{*}}{}
+    \ifitemannotation{co-second}{\textsuperscript{+}}{}
 }
